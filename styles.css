@@ -1,0 +1,242 @@
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    font-family: 'Khmer OS', sans-serif;
+    color: #004d00;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: url(assets/background_wedding.jpeg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5); /* Darker background */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    animation: slide-in 1s ease-out;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.primary-title, .secondary-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Moulpali", serif;
+    font-style: normal;
+    color: #FFD700; /* Gold color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adding shadow to text */
+    animation: glow 2s infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 15px #FFD700, 0 0 20px #FFD700, 0 0 25px #FFD700, 0 0 30px #FFD700, 0 0 35px #FFD700;
+    }
+    50% {
+        text-shadow: 0 0 10px #FFDD00, 0 0 20px #FFDD00, 0 0 30px #FFDD00, 0 0 40px #FFDD00, 0 0 50px #FFDD00, 0 0 60px #FFDD00, 0 0 70px #FFDD00;
+    }
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+    animation: zoom-in 1.5s ease-out;
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    animation: fade-in-up 1.5s ease-out;
+}
+
+@keyframes fade-in-up {
+    from {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.event-details {
+    font-size: 16px;
+    margin: 20px 0;
+    color: #4e471f; /* Gold color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Adding shadow to text */
+}
+
+.event-details p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Moulpali", serif;
+    font-style: normal;
+}
+
+.button, .ornate-button {
+    background-color: #004d00;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Moulpali', serif;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover, .ornate-button:hover {
+    background-color: #003300;
+}
+
+.ornate-button {
+    background-color: #f9f9f9;
+    border: 2px solid gold;
+    color: #004d00;
+}
+
+.ornate-button::before,
+.ornate-button::after {
+    content: '';
+    position: absolute;
+    border: 2px solid gold;
+    border-radius: 10px;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    pointer-events: none;
+}
+
+.ornate-button:hover {
+    background-color: #f1f1f1;
+    color: #003300;
+    border-color: darkgoldenrod;
+}
+
+.image-container img {
+    width: 200px;
+    height: auto;
+}
+
+.bird {
+    width: 50px;
+    height: 50px;
+    background-image: url('assets/birds.png'); /* Add your bird image */
+    background-size: cover;
+    position: absolute;
+    bottom: -60px; /* Position below the image */
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Fireworks animation */
+#fireworks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.firework {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: #ff5e5e;
+    border-radius: 50%;
+    opacity: 0;
+    animation: explode 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) forwards;
+}
+
+@keyframes explode {
+    0% { opacity: 1; transform: scale(0); }
+    50% { opacity: 1; transform: scale(1.5); }
+    100% { opacity: 0; transform: scale(2); }
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .primary-title, .secondary-title {
+        font-size: 20px;
+        font-family: 'Moulpali';
+    }
+
+    .event-details p {
+        font-size: 14px;
+    }
+
+    .button, .ornate-button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    .bird {
+        width: 40px;
+        height: 40px;
+        bottom: -50px; /* Adjust for smaller screens */
+    }
+}
