@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     background-image: url('assets/wedding_invitation_background.jpeg');
     background-size: cover;
@@ -5,50 +6,66 @@ body {
     font-family: 'Noto Sans Khmer', sans-serif;
     color: #004d00;
     text-align: center;
-    padding: 20px;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
     padding: 20px;
-    display: inline-block;
+    margin: 10px auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     max-width: 95%;
-    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Titles */
 .primary-title, .secondary-title {
-    font-size: 5vw;
+    font-size: 8vw;
     font-family: 'Moulpali', serif;
     color: #FFD700;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 1px 0 #ccc, 
+                 0 2px 0 #c9c9c9,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b9b9b9,
+                 0 5px 0 #aaa,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
     margin: 10px 0;
+    text-align: center;
 }
 
+/* Image */
 .image-container img {
-    width: 60%;
-    max-width: 200px;
+    width: 70%;
+    max-width: 300px;
     border-radius: 50%;
     border: 5px solid #FFD700;
     animation: zoom-in 1s ease-in-out;
 }
 
+/* Buttons */
 .button {
     display: inline-block;
     background-color: #004d00;
     color: #fff;
-    padding: 10px 20px;
-    font-size: 4vw;
+    padding: 12px 25px;
+    font-size: 5vw;
     font-family: 'Moul', serif;
     text-decoration: none;
-    border-radius: 8px;
-    transition: all 0.3s;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
     margin-top: 20px;
-    max-width: 90%;
 }
 
 .button:hover {
@@ -56,25 +73,32 @@ body {
     transform: scale(1.1);
 }
 
+/* Countdown */
 .countdown {
-    font-size: 4vw;
+    font-size: 5vw;
     margin: 20px 0;
     color: #FF4500;
 }
 
+/* Card */
 .card {
     margin-top: 20px;
-    padding: 10px;
+    padding: 15px;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
 }
 
 .card p {
-    font-size: 4vw;
+    font-size: 4.5vw;
     color: #333;
+    margin: 0;
+    line-height: 1.5;
 }
 
+/* Fireworks */
 #fireworks {
     position: fixed;
     top: 0;
@@ -82,6 +106,7 @@ body {
     width: 100%;
     height: 100%;
     pointer-events: none;
+    z-index: 9999;
 }
 
 .firework {
@@ -98,20 +123,32 @@ body {
     100% { transform: scale(3); opacity: 0; }
 }
 
-.music-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #004d00;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 10px 15px;
-    font-size: 14px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+/* Animations */
+@keyframes zoom-in {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
 }
 
-.music-button:hover {
-    background-color: #003300;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .primary-title, .secondary-title {
+        font-size: 10vw;
+    }
+
+    .image-container img {
+        width: 80%;
+    }
+
+    .button {
+        font-size: 6vw;
+        padding: 10px 20px;
+    }
+
+    .countdown {
+        font-size: 6vw;
+    }
+
+    .card p {
+        font-size: 5vw;
+    }
 }
