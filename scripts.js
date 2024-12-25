@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const timerElement = document.getElementById('timer');
-    const targetDate = new Date("2024-12-24T00:00:00").getTime();
+    const targetDate = new Date("2024-03-03T17:00:00").getTime();
 
     function updateTimer() {
         const now = new Date().getTime();
@@ -21,11 +21,27 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(updateTimer, 1000);
 });
 
-function rsvp() {
-    alert("Thank you for your RSVP!");
+function playFireworks() {
+    const fireworksContainer = document.getElementById('fireworks');
+    for (let i = 0; i < 50; i++) {
+        const firework = document.createElement('div');
+        firework.className = 'firework';
+        firework.style.left = Math.random() * 100 + '%';
+        firework.style.top = Math.random() * 100 + '%';
+        fireworksContainer.appendChild(firework);
+
+        setTimeout(() => firework.remove(), 1000);
+    }
 }
 
-function toggleDetails() {
-    const description = document.querySelector('.intro-description');
-    description.classList.toggle('hidden');
+function toggleMusic() {
+    const music = document.getElementById('background-music');
+    const button = document.getElementById('music-toggle');
+    if (music.paused) {
+        music.play();
+        button.textContent = 'Pause Music';
+    } else {
+        music.pause();
+        button.textContent = 'Play Music';
+    }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Invitation</title>
+    <title>Wedding Invitation</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Moul&family=Moulpali&family=Noto+Sans+Khmer:wght@100..900&display=swap" rel="stylesheet">
 </head>
@@ -11,17 +11,22 @@
     <div class="container">
         <div class="title primary-title">សិរីមង្គលអាពាហ៍ពិពាហ៍</div>
         <div class="image-container">
-            <img src="assets/chanralika.png" alt="Image" class="fade-in">
+            <img src="assets/chanralika.png" alt="Wedding Image" class="fade-in">
         </div>
         <div class="title secondary-title">សូមគោរពអញ្ជើញ</div>
-        <a href="#" class="button ornate-button">ចុចបើកលិខិតអញ្ជើញ</a>
+        <a href="#" class="button ornate-button" onclick="playFireworks();">ចុចបើកលិខិតអញ្ជើញ</a>
+        <div id="timer" class="countdown"></div>
         <div class="card">
             <div class="event-details">
                 <p>ថ្ងៃសៅរ៍ទី ០៣ ខែ មិនា ឆ្នាំ ២០២៤ វេលាម៉ោង ៥:០០ល្ងាច នៅទីតាំងអត់ដឹង នៅព្រះសីហនុ។</p>
             </div>
         </div>
-        <div id="fireworks"></div> <!-- Fireworks animation container -->
+        <div id="fireworks"></div>
     </div>
-    <script src="scripts.js"></script>
+    <audio id="background-music" loop>
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+    <!-- <button id="music-toggle" class="music-button" onclick="toggleMusic();">Play Music</button> -->
+    <script src="script.js"></script>
 </body>
 </html>
