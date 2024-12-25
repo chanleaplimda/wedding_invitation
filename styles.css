@@ -1,8 +1,7 @@
 body {
-    /* background-image: url('assets/wedding_invitation_background.jpeg'); */
     background-size: cover;
     background-position: center;
-    font-family: 'Noto Sans Khmer', sans-serif;
+    font-family: 'Dangrek', sans-serif;
     color: #004d00;
     text-align: center;
     padding: 20px;
@@ -16,7 +15,7 @@ body {
     }
 
     body {
-        background-image: url('assets/fallback-image.jpg');
+        background-image: url('assets/wedding_invitation_background.jpeg');
         background-size: cover;
         background-position: center;
     }
