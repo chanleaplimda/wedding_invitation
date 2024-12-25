@@ -10,6 +10,16 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
 }
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensures the video stays in the background */
+}
+
 
 .container {
     background: rgba(255, 255, 255, 0.9);
@@ -19,7 +29,7 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     max-width: 95%;
     margin: 20px auto;
-    animation: fade-in 1.5s ease-in-out;
+    animation: fade-in 2.5s ease-in-out;
 }
 
 .primary-title, .secondary-title {
@@ -39,7 +49,7 @@ body {
     animation: zoom-in 1s ease-in-out;
 }
 
-.button {
+/* .button {
     display: inline-block;
     background: linear-gradient(45deg, #004d00, #006600);
     color: #fff;
@@ -57,7 +67,48 @@ body {
     background: linear-gradient(45deg, #003300, #004d00);
     transform: translateY(-4px) scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+} */
+.button {
+    display: inline-block;
+    background: linear-gradient(145deg, #f8c92b, #ffb800);
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: 'Moul', serif;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+    position: relative;
+    border: none;
 }
+
+.button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, #fff, #ffce33);
+    border-radius: 12px;
+    filter: blur(10px);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3), -6px -6px 12px rgba(255, 255, 255, 0.5), inset 3px 3px 6px rgba(255, 255, 255, 0.1);
+}
+
+.button:active {
+    transform: translateY(2px) scale(0.95);
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.5);
+}
+
+
 
 .countdown {
     font-size: 6vw;
