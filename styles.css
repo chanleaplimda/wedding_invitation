@@ -35,7 +35,7 @@ body {
 
 /* Container centered with padding */
 .container {
-    background: rgba(255, 255, 255, 0.2); /* Reduced opacity */
+    background: rgba(255, 255, 255, 0.1); /* Reduced opacity */
     border-radius: 12px;
     padding: 40px;
     display: flex;
@@ -61,13 +61,33 @@ body {
 }
 
 /* Image container */
-.image-container img {
+/* .image-container img {
     width: 80%;
     max-width: 300px;
     border-radius: 50%;
     border: 8px solid #FFD700;
     animation: zoom-in 1s ease-in-out;
+} */
+.image-container img {
+    width: 80%;
+    max-width: 350px; /* Increased max width for better scaling */
+    border-radius: 50%;
+    border: 10px solid #FFD700; /* Slightly thicker border for prominence */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    animation: zoom-in 1s ease-in-out;
 }
+
+.image-container img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+.image-container img:active {
+    transform: scale(0.98); /* Slight shrink effect on click */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}
+
 
 /* Button styles */
 .button {
@@ -178,6 +198,7 @@ body {
 @media (max-width: 768px) {
     .primary-title, .secondary-title {
         font-size: 6vw;
+        font-weight: 400;
     }
 
     .image-container img {
