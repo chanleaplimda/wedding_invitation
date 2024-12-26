@@ -1,0 +1,128 @@
+body {
+    font-family: 'Khmer', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+    color: white;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.95);
+}
+
+/* Title styles */
+.name-title {
+    font-size: 22px;
+    font-family: 'Moulpali', serif;
+    color: #FFD700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 
+                 0 4px 8px rgba(0, 0, 0, 0.35);
+    margin: 15px 0;
+}
+.name-title2 {
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'Moulpali', serif;
+    color: #FFD700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 
+                 0 4px 8px rgba(0, 0, 0, 0.35);
+    margin: 15px 0;
+}
+.primary-title {
+    font-size: 6vw;
+    font-family: 'Dangrek', serif;
+    color: #FFD700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 
+                 0 4px 8px rgba(0, 0, 0, 0.35);
+    margin: 30px 0;
+    text-align: center;
+}
+
+/* Container styles */
+.container-name-inlaw {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 50px; /* Space between items */
+    padding-bottom: 10px; /* Maintain bottom spacing */
+    height: 100%; /* Ensure full height for vertical centering */
+    text-align: center; /* Align text centrally if needed */
+}
+.container-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+.image-container img {
+    border: 2px solid #FFD700;
+    border-radius: 50%;
+    width: 80%;
+    animation: zoom-in 1s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+.partner-container {
+    display: flex;
+    justify-content: center; /* Center the container's content horizontally */
+    align-items: center; /* Center the items vertically */
+    gap: 40px; /* Add space between the columns */
+    padding: 20px; /* Add padding around the container */
+    text-align: center; /* Center-align text within each section */
+}
+
+.partner-container div {
+    flex: 1; /* Allow each column to occupy equal space */
+    max-width: 300px; /* Optional: Limit column width for a neater layout */
+}
+
+
+
+/* .name-title {
+    margin: 10px 0; /* Reduce spacing between lines for better layout 
+    font-size: 20px; /* Adjust font size for readability 
+    color: #FFD700;
+/* } 
+/* name-title2{ 
+    /* margin: 10px 0; Reduce spacing between lines for better layout 
+    font-size: 18px; /* Adjust font size for readability 
+    color: #FFD700;
+    font-weight: 300;
+} */
+
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

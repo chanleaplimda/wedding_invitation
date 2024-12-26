@@ -72,7 +72,7 @@ body {
     width: 80%;
     max-width: 350px; /* Increased max width for better scaling */
     border-radius: 50%;
-    border: 10px solid #FFD700; /* Slightly thicker border for prominence */
+    border: 5px solid #FFD700; /* Slightly thicker border for prominence */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
     animation: zoom-in 1s ease-in-out;
