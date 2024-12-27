@@ -109,7 +109,7 @@ body {
     display: flex;
     justify-content: center; /* Center the container's content horizontally */
     align-items: center; /* Center the items vertically */
-    gap: 40px; /* Add space between the columns */
+    gap: 10px; /* Add space between the columns */
     padding: 20px; /* Add padding around the container */
     text-align: center; /* Center-align text within each section */
 }
