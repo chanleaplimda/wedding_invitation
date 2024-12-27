@@ -109,9 +109,14 @@ body {
     display: flex;
     justify-content: center; /* Center the container's content horizontally */
     align-items: center; /* Center the items vertically */
-    gap: 10px; /* Add space between the columns */
+    /* gap: 10px; Add space between the columns */
     padding: 20px; /* Add padding around the container */
     text-align: center; /* Center-align text within each section */
+    border: 2px dotted rgb(96 139 168);
+}
+.name-box {
+    width: 250px;
+    border: 2px dotted rgb(96 139 168);
 }
 
 .partner-container div {
