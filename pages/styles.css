@@ -119,7 +119,7 @@ body {
 
 .card p {
     font-size: 2.5vw;
-    font-family: 'Moulpali';
+    font-family: 'Kdam Thmor Pro';
     text-shadow: 0 2px 4px rgba(255, 255, 255, 0.2), 
                  0 4px 8px rgb(255, 255, 255);
     font-weight: 500;
@@ -127,6 +127,77 @@ body {
     text-align: center;
     line-height: 1.6;
 }
+/* Container styling */
+.map-container {
+    width: 100%;        /* Full width of its parent */
+    height: 200px;      /* Fixed height of 200px */
+    position: relative;
+}
+
+/* Google Map styling */
+#map {
+    width: 100%;
+    height: 100%;
+}
+/* Styling for the container */
+.image-container {
+    text-align: center; /* Center the text inside the container */
+    position: relative; /* Needed for positioning the title over the image */
+    display: flex; /* Use flexbox for centering image and title */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+/* Styling for the wedding image */
+.wedding-image {
+    width: 40%; /* Reduced width for a smaller image */
+    height: auto; /* Auto height to maintain aspect ratio */
+    max-width: 180px; /* Max width to ensure it's not too big */
+    max-height: 50vh; /* Limit height for better visual proportion */
+    border: 8px solid #fff; /* Soft white border */
+    border-radius: 50% / 30%; /* Oval shape (horizontal oval) */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4), 0 0 35px rgba(0, 0, 0, 0.6); /* Soft shadow effect */
+    object-fit: cover; /* Ensure image fills the space without distortion */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+/* Optional: Add hover effect for better interaction */
+.wedding-image:hover {
+    transform: scale(1.05); /* Slightly scale up on hover for emphasis */
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.5), 0 0 60px rgba(0, 0, 0, 0.7); /* Intensify glow on hover */
+}
+
+/* Styling for the title text */
+.primary-title-name {
+    font-family: 'Rubik Vinyl'; /* Font style */
+    font-size: 2.5rem; /* Adjust size to make the title stand out */
+    color: #fff; /* White color for the text */
+    margin-top: 15px; /* Space between the image and the title */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Soft shadow for text */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effects for text */
+}
+
+/* Optional: Hover effect on text for better interaction */
+.primary-title-name:hover {
+    transform: scale(1.1); /* Slightly scale up text on hover */
+    color: #f1c40f; /* Change text color to gold on hover */
+}
+
+/* Optional: For responsive adjustments */
+@media (max-width: 768px) {
+    .wedding-image {
+        width: 60%; /* Adjust width on smaller screens */
+        max-width: 250px; /* Adjust max width for smaller screens */
+        max-height: 45vh; /* Reduce height on smaller screens */
+    }
+
+    .primary-title {
+        font-size: 2rem; /* Adjust title size on smaller screens */
+    }
+}
+
 
 
 .container-title {
