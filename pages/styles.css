@@ -31,8 +31,17 @@ body {
     margin: 15px 0;
 }
 .name-title2 {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 100;
+    font-family: 'Moulpali', serif;
+    color: #FFD700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 
+                 0 4px 8px rgba(0, 0, 0, 0.35);
+    margin: 15px 0;
+}
+.name-title3 {
+    font-size: 16px;
+    font-weight: 500;
     font-family: 'Moulpali', serif;
     color: #FFD700;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 
@@ -52,13 +61,29 @@ body {
 /* Container styles */
 .container-name-inlaw {
     display: flex;
-    justify-content: center; /* Center horizontally */
+    justify-content: space-around; /* Center horizontally */
     align-items: center; /* Center vertically */
-    gap: 50px; /* Space between items */
-    padding-bottom: 10px; /* Maintain bottom spacing */
     height: 100%; /* Ensure full height for vertical centering */
     text-align: center; /* Align text centrally if needed */
+    /* border: 2px dotted rgb(96 139 168); */
 }
+.container-wrapper {
+    display: flex;
+    justify-content: center; /* Center the containers horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Add space between the containers */
+}
+.container-name {
+    display: flex;
+    flex-direction: row; /* Stack content vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px; /* Add space between the containers */
+    /* border: 2px dotted rgb(96 139 168); */
+}
+
+
 .container-title {
     display: flex;
     flex-direction: column;
