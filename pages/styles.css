@@ -188,7 +188,6 @@ body {
     .relative-image {
         max-width: 100%; /* Adjust the max-width for mobile */
         max-height: 100%; /* Adjust the max-height for mobile */
-        transform: translateX(-10%); /* Move image slightly to the left */
     }
 }
 
