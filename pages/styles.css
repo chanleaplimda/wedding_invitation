@@ -40,18 +40,21 @@ body {
     margin: 15px 0;
 }
 
-p:lang(fr) {
-    font-size: 18px;
-    font-family: 'Moul', serif;
+.moul-font {
+    font-family: 'Dangrek', serif;
+}
+
+.primary-title {
+    font-size: 5vw;
+    font-family: 'Dangrek', serif;
     color: #FFD700;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 
                  0 4px 8px rgba(0, 0, 0, 0.35);
-    margin: 15px 0;
-  }
-
-
-.primary-title {
-    font-size: 6vw;
+    margin: 30px 0;
+    text-align: center;
+}
+.primary-title-2 {
+    font-size: 5vw;
     font-family: 'Dangrek', serif;
     color: #FFD700;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 
@@ -102,7 +105,7 @@ p:lang(fr) {
     margin: 0; /* Remove default margins */
     white-space: nowrap; /* Prevent text wrapping */
     font-family: 'Moulpali';
-    font-size: 3vw; /* Adjust size dynamically based on viewport */
+    font-size: 3.5vw; /* Adjust size dynamically based on viewport */
     color: #FFD700;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 
                  0 4px 8px rgba(0, 0, 0, 0.35);
@@ -138,39 +141,58 @@ p:lang(fr) {
     text-align: center;
 }
 
-/* .image-container img {
-    border: 2px solid #FFD700;
-    border-radius: 50%;
-    width: 80%;
-    animation: zoom-in 1s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    margin: 20px;
-} */
+/* Container holding the border image */
 .border-container {
     background-image: url('../assets/border.png');
-    background-size: contain; /* Ensures the border image scales */
+    background-size: contain;
     background-repeat: no-repeat;
-    width: 200px; /* Set a fixed width */
-    height: 200px; /* Set a fixed height */
-    display: flex; /* Flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    position: relative; /* Ensures child elements are positioned relative to this container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  /* Ensure it takes full width */
+    height: 100vh; /* Full height (adjustable as needed) */
+    position: relative;
+    overflow: hidden; /* Prevent image overflow */
 }
 
+/* Inner container that holds the image */
 .relative-container {
-    width: 150px; /* Size of the image container */
-    height: 150px;
-    display: flex; /* Flexbox for centering the image */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Allow the container to take full width */
+    height: 100%; /* Allow the container to take full height */
+    position: relative;
 }
 
+/* Image style */
 .relative-image {
-    max-width: 100%; /* Make the image scale to fit the container */
-    max-height: 100%; /* Prevent the image from overflowing the container */
-    object-fit: contain; /* Ensure the image maintains its aspect ratio */
+    max-width: 100%;  /* Allow image width to fit within the container */
+    max-height: 100%; /* Allow image height to fit within the container */
+    object-fit: contain; /* Preserve aspect ratio */
+    margin: 0 auto; /* This ensures the image is centered */
 }
+
+/* Mobile responsiveness: Adjust image container and border size */
+@media (max-width: 768px) {
+    .border-container {
+        width: 150px;  /* Adjust width for mobile */
+        height: 150px; /* Adjust height for mobile */
+    }
+
+    .relative-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .relative-image {
+        max-width: 100%; /* Adjust the max-width for mobile */
+        max-height: 100%; /* Adjust the max-height for mobile */
+        transform: translateX(-10%); /* Move image slightly to the left */
+    }
+}
+
+
 
 
 
@@ -207,5 +229,18 @@ p:lang(fr) {
     to {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .border-container {
+        width: 150px;  /* Adjust width for mobile */
+        height: 150px; /* Adjust height for mobile */
+    }
+
+    .relative-container {
+        width: 120px;  /* Adjust image container size for mobile */
+        height: 120px; /* Adjust image container size for mobile */
     }
 }
