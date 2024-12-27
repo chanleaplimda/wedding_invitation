@@ -30,24 +30,7 @@ body {
                  0 4px 8px rgba(0, 0, 0, 0.35);
     margin: 15px 0;
 }
-.name-title2 {
-    font-size: 14px;
-    font-weight: 100;
-    font-family: 'Moulpali', serif;
-    color: #FFD700;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 
-                 0 4px 8px rgba(0, 0, 0, 0.35);
-    margin: 15px 0;
-}
-.name-title3 {
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'Moulpali', serif;
-    color: #FFD700;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 
-                 0 4px 8px rgba(0, 0, 0, 0.35);
-    margin: 15px 0;
-}
+
 .primary-title {
     font-size: 6vw;
     font-family: 'Dangrek', serif;
@@ -57,31 +40,53 @@ body {
     margin: 30px 0;
     text-align: center;
 }
-
 /* Container styles */
+.row {
+    display: flex;
+    flex-direction: row; /* Arrange all child elements in a row */
+    justify-content: center; /* Center all child containers horizontally */
+    align-items: center; /* Center all child containers vertically */
+    gap: 30px; /* Space between each container-name-inlaw */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin: 20px 0; /* Add vertical margin for spacing */
+}
+
 .container-name-inlaw {
     display: flex;
-    justify-content: space-around; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100%; /* Ensure full height for vertical centering */
-    text-align: center; /* Align text centrally if needed */
-    /* border: 2px dotted rgb(96 139 168); */
+    flex-direction: column; /* Stack elements inside vertically */
+    align-items: center; /* Center the content inside horizontally */
+    justify-content: center; /* Center the content inside vertically */
+    gap: 15px; /* Space between the wrapper and other sections */
 }
+
 .container-wrapper {
     display: flex;
-    justify-content: center; /* Center the containers horizontally */
-    align-items: center; /* Align items vertically */
-    gap: 20px; /* Add space between the containers */
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: start; /* Center align child elements horizontally */
+    justify-content: center; /* Center align child elements vertically */
+    gap: 10px; /* Space between elements */
 }
+
 .container-name {
     display: flex;
-    flex-direction: row; /* Stack content vertically */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 5px; /* Add space between the containers */
-    /* border: 2px dotted rgb(96 139 168); */
+    flex-direction: row; /* Arrange titles in a row */
+    align-items: center; /* Align title elements vertically in the middle */
+    justify-content: center; /* Center align titles horizontally */
+    gap: 10px; /* Space between titles */
+    white-space: nowrap; /* Prevent line breaks within this container */
 }
+
+
+.name-title2, .name-title3 {
+    margin: 0; /* Remove default margins */
+    white-space: nowrap; /* Prevent text wrapping */
+    font-size: 4vw; /* Adjust size dynamically based on viewport */
+    color: #FFD700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 
+                 0 4px 8px rgba(0, 0, 0, 0.35);
+}
+
+
 
 
 .container-title {
