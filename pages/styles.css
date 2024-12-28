@@ -111,7 +111,7 @@ body {
     margin: 0; /* Remove default margins */
     white-space: nowrap; /* Prevent text wrapping */
     font-family: 'Moulpali';
-    font-size: 3.5vw; /* Adjust size dynamically based on viewport */
+    font-size: 3.0vw; /* Adjust size dynamically based on viewport */
     color: #FFD700;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 
                  0 4px 8px rgba(0, 0, 0, 0.35);
