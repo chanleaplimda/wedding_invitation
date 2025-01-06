@@ -45,3 +45,9 @@ function toggleMusic() {
         button.textContent = 'Play Music';
     }
 }
+window.addEventListener('load', function () {
+    var audio = document.querySelector('audio');
+    audio.play().catch(function (error) {
+        console.log('Audio play was blocked:', error);
+    });
+});
