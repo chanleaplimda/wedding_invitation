@@ -9,18 +9,18 @@
 body {
     font-family: 'Khmer', sans-serif;
     margin: 0;
-    overflow-y: auto; /* Allow vertical scrolling */
+    overflow-y: auto;
     display: flex;
-    flex-direction: column; /* Allow stacking of content vertically */
-    justify-content: flex-start; /* Align content to the top */
-    min-height: 100vh; /* Ensure the body takes at least full viewport height */
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
     color: white;
 }
 
 /* Background video */
 #background-video {
-    position: fixed; /* Ensure the video stays in place */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -40,7 +40,6 @@ body {
     margin: 15px 0;
 }
 
-
 .primary-title {
     font-size: 5vw;
     font-family: 'Dangrek', serif;
@@ -50,6 +49,7 @@ body {
     margin: 30px 0;
     text-align: center;
 }
+
 .primary-title-2 {
     font-size: 5vw;
     font-family: 'Dangrek', serif;
@@ -59,7 +59,8 @@ body {
     margin: 30px 0;
     text-align: center;
 }
-.primary-title-3{
+
+.primary-title-3 {
     font-size: 4vw;
     font-family: 'Moulpali', serif;
     color: #FFD700;
@@ -72,46 +73,46 @@ body {
 /* Container styles */
 .row {
     display: flex;
-    flex-direction: row; /* Arrange all child elements in a row */
-    justify-content: center; /* Center all child containers horizontally */
-    align-items: center; /* Center all child containers vertically */
-    gap: 30px; /* Space between each container-name-inlaw */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
     margin: 20px 0;
-    max-width: 100%; /* Ensure it doesn't overflow horizontally */
-    max-height: 100%; /* Ensure it doesn't overflow vertically */
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .container-name-inlaw {
     display: flex;
-    flex-direction: column; /* Stack elements inside vertically */
-    align-items: center; /* Center the content inside horizontally */
-    justify-content: center; /* Center the content inside vertically */
-    gap: 15px; /* Space between the wrapper and other sections */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
 .container-wrapper {
     display: flex;
-    flex-direction: column; /* Stack child elements vertically */
-    align-items: start; /* Center align child elements horizontally */
-    justify-content: center; /* Center align child elements vertically */
-    gap: 10px; /* Space between elements */
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
 }
 
 .container-name {
     display: flex;
-    flex-direction: row; /* Arrange titles in a row */
-    align-items: center; /* Align title elements vertically in the middle */
-    justify-content: center; /* Center align titles horizontally */
-    gap: 10px; /* Space between titles */
-    white-space: nowrap; /* Prevent line breaks within this container */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    white-space: nowrap;
 }
 
 .name-title2, .name-title3 {
-    margin: 0; /* Remove default margins */
-    white-space: nowrap; /* Prevent text wrapping */
+    margin: 0;
+    white-space: nowrap;
     font-family: 'Moulpali';
-    font-size: 3.0vw; /* Adjust size dynamically based on viewport */
+    font-size: 3.5vw;
     color: #FFD700;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 
                  0 4px 8px rgba(0, 0, 0, 0.35);
@@ -136,10 +137,11 @@ body {
     text-align: center;
     line-height: 1.6;
 }
+
 /* Container styling */
 .map-container {
-    width: 100%;        /* Full width of its parent */
-    height: 200px;      /* Fixed height of 200px */
+    width: 100%;
+    height: 200px;
     position: relative;
 }
 
@@ -148,11 +150,12 @@ body {
     width: 100%;
     height: 100%;
 }
+
 /* Styling for the container */
 .image-container {
-    text-align: center; /* Center the text inside the container */
-    position: relative; /* Needed for positioning the title over the image */
-    display: flex; /* Use flexbox for centering image and title */
+    text-align: center;
+    position: relative;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -161,53 +164,51 @@ body {
 
 /* Styling for the wedding image */
 .wedding-image {
-    width: 40%; /* Reduced width for a smaller image */
-    height: auto; /* Auto height to maintain aspect ratio */
-    max-width: 180px; /* Max width to ensure it's not too big */
-    max-height: 50vh; /* Limit height for better visual proportion */
-    border: 8px solid #fff; /* Soft white border */
-    border-radius: 50% / 30%; /* Oval shape (horizontal oval) */
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4), 0 0 35px rgba(0, 0, 0, 0.6); /* Soft shadow effect */
-    object-fit: cover; /* Ensure image fills the space without distortion */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    width: 40%;
+    height: auto;
+    max-width: 180px;
+    max-height: 50vh;
+    border: 8px solid #fff;
+    border-radius: 50% / 30%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4), 0 0 35px rgba(0, 0, 0, 0.6);
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Optional: Add hover effect for better interaction */
 .wedding-image:hover {
-    transform: scale(1.05); /* Slightly scale up on hover for emphasis */
-    box-shadow: 0 0 45px rgba(0, 0, 0, 0.5), 0 0 60px rgba(0, 0, 0, 0.7); /* Intensify glow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.5), 0 0 60px rgba(0, 0, 0, 0.7);
 }
 
 /* Styling for the title text */
 .primary-title-name {
-    font-family: 'Rubik Vinyl'; /* Font style */
-    font-size: 2.5rem; /* Adjust size to make the title stand out */
-    color: #fff; /* White color for the text */
-    margin-top: 15px; /* Space between the image and the title */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Soft shadow for text */
-    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effects for text */
+    font-family: 'Rubik Vinyl';
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 /* Optional: Hover effect on text for better interaction */
 .primary-title-name:hover {
-    transform: scale(1.1); /* Slightly scale up text on hover */
-    color: #f1c40f; /* Change text color to gold on hover */
+    transform: scale(1.1);
+    color: #f1c40f;
 }
 
 /* Optional: For responsive adjustments */
 @media (max-width: 768px) {
     .wedding-image {
-        width: 60%; /* Adjust width on smaller screens */
-        max-width: 250px; /* Adjust max width for smaller screens */
-        max-height: 45vh; /* Reduce height on smaller screens */
+        width: 60%;
+        max-width: 250px;
+        max-height: 45vh;
     }
 
     .primary-title {
-        font-size: 2rem; /* Adjust title size on smaller screens */
+        font-size: 2rem;
     }
 }
-
-
 
 .container-title {
     display: flex;
@@ -226,10 +227,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;  /* Ensure it takes full width */
-    height: 100vh; /* Full height (adjustable as needed) */
+    width: 100%;
+    height: 100vh;
     position: relative;
-    overflow: hidden; /* Prevent image overflow */
+    overflow: hidden;
 }
 
 /* Inner container that holds the image */
@@ -237,24 +238,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Allow the container to take full width */
-    height: 100%; /* Allow the container to take full height */
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
 /* Image style */
 .relative-image {
-    max-width: 100%;  /* Allow image width to fit within the container */
-    max-height: 100%; /* Allow image height to fit within the container */
-    object-fit: contain; /* Preserve aspect ratio */
-    margin: 0 auto; /* This ensures the image is centered */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: 0 auto;
 }
 
 /* Mobile responsiveness: Adjust image container and border size */
 @media (max-width: 768px) {
     .border-container {
-        width: 150px;  /* Adjust width for mobile */
-        height: 150px; /* Adjust height for mobile */
+        width: 150px;
+        height: 150px;
     }
 
     .relative-container {
@@ -263,26 +264,21 @@ body {
     }
 
     .relative-image {
-        max-width: 100%; /* Adjust the max-width for mobile */
-        max-height: 100%; /* Adjust the max-height for mobile */
+        max-width: 100%;
+        max-height: 100%;
     }
 }
 
-
-
-
-
-
 .partner-container {
     display: flex;
-    justify-content: center; /* Center the container's content horizontally */
-    align-items: center; /* Center the items vertically */
-    text-align: center; /* Center-align text within each section */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .partner-container div {
-    flex: 1; /* Allow each column to occupy equal space */
-    max-width: 300px; /* Optional: Limit column width for a neater layout */
+    flex: 1;
+    max-width: 300px;
 }
 
 /* Animations */
@@ -311,19 +307,20 @@ body {
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .border-container {
-        width: 150px;  /* Adjust width for mobile */
-        height: 150px; /* Adjust height for mobile */
+        width: 150px;
+        height: 150px;
     }
 
     .relative-container {
-        width: 120px;  /* Adjust image container size for mobile */
-        height: 120px; /* Adjust image container size for mobile */
+        width: 120px;
+        height: 120px;
     }
 }
+
 /* Timeline container styling */
 .timeline-container {
     margin: 50px auto;
-    padding: 20px;
+    padding: 10px;
     width: 90%;
     max-width: 800px;
     background: rgba(255, 255, 255, 0.9);
@@ -422,7 +419,6 @@ body {
     font-size: 14px;
     font-weight: 500;
     font-family: 'Moulpali';
-    /* font-size: 1.5em; */
     color: #333;
 }
 
@@ -476,4 +472,103 @@ body {
         left: 50%;
     }
 }
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Body styles */
+body {
+    font-family: 'Khmer', sans-serif;
+    margin: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+    color: white;
+}
+
+/* Background video */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.95);
+}
+
+/* Title styles */
+.primary-title {
+    font-size: 5vw;
+    font-family: 'Dangrek', serif;
+    color: #FFD700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 
+                 0 4px 8px rgba(0, 0, 0, 0.35);
+    margin: 30px 0;
+    text-align: center;
+}
+
+/* Map Container */
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin: 20px 0;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .primary-title {
+        font-size: 6vw;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
