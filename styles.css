@@ -53,10 +53,8 @@ body {
 /* Title styles */
 .primary-title, .secondary-title {
     font-size: 8vw;
-    font-family: 'Moulpali', serif;
-    color: #FFD700;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 
-                 0 4px 8px rgba(0, 0, 0, 0.25);
+    font-family: 'Preahvihear', serif;
+    color: #d9be71;
     margin: 15px 0;
 }
 
@@ -138,7 +136,7 @@ body {
     position: absolute;
     width: 5px;
     height: 5px;
-    background: #FFD700;
+    background: #d9be71;
     border-radius: 50%;
     animation: explode 1.5s ease-out forwards;
 }

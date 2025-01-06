@@ -33,19 +33,17 @@ body {
 /* Title styles */
 .name-title {
     font-size: 22px;
-    font-family: 'Moulpali', serif;
-    color: #FFD700;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 
-                 0 4px 8px rgba(0, 0, 0, 0.35);
+    font-family: 'Kdam Thmor Pro', serif;
+    color: #d9be71;
+   
     margin: 15px 0;
 }
 
 .primary-title {
     font-size: 5vw;
     font-family: 'Dangrek', serif;
-    color: #FFD700;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 
-                 0 4px 8px rgba(0, 0, 0, 0.35);
+    color: #d9be71;
+   
     margin: 30px 0;
     text-align: center;
 }
@@ -53,19 +51,17 @@ body {
 .primary-title-2 {
     font-size: 5vw;
     font-family: 'Dangrek', serif;
-    color: #FFD700;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 
-                 0 4px 8px rgba(0, 0, 0, 0.35);
+    color: #d9be71;
+   
     margin: 30px 0;
     text-align: center;
 }
 
 .primary-title-3 {
     font-size: 4vw;
-    font-family: 'Moulpali', serif;
-    color: #FFD700;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 
-                 0 4px 8px rgba(0, 0, 0, 0.35);
+    font-family: 'Preahvihear', serif;
+    color: #d9be71;
+   
     margin: 30px 0;
     text-align: center;
 }
@@ -111,11 +107,10 @@ body {
 .name-title2, .name-title3 {
     margin: 0;
     white-space: nowrap;
-    font-family: 'Moulpali';
+    font-family: 'Preahvihear';
     font-size: 3.5vw;
-    color: #FFD700;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 
-                 0 4px 8px rgba(0, 0, 0, 0.35);
+    color: #d9be71;
+   
 }
 
 /* Event details card */
@@ -129,7 +124,7 @@ body {
 
 .card p {
     font-size: 2.5vw;
-    font-family: 'Kdam Thmor Pro';
+    font-family: 'Preahvihear';
     text-shadow: 0 2px 4px rgba(255, 255, 255, 0.2), 
                  0 4px 8px rgb(255, 255, 255);
     font-weight: 500;
@@ -140,6 +135,7 @@ body {
 
 /* Container styling */
 .map-container {
+    margin: 10px;
     width: 100%;
     height: 200px;
     position: relative;
@@ -183,7 +179,7 @@ body {
 
 /* Styling for the title text */
 .primary-title-name {
-    font-family: 'Rubik Vinyl';
+    font-family: 'Dangrek';
     font-size: 2.5rem;
     color: #fff;
     margin-top: 15px;
@@ -192,10 +188,10 @@ body {
 }
 
 /* Optional: Hover effect on text for better interaction */
-.primary-title-name:hover {
+/* .primary-title-name:hover {
     transform: scale(1.1);
     color: #f1c40f;
-}
+} */
 
 /* Optional: For responsive adjustments */
 @media (max-width: 768px) {
@@ -338,7 +334,7 @@ body {
     bottom: 0;
     left: 50%;
     width: 4px;
-    background: #FFD700;
+    background: #d9be71;
     transform: translateX(-50%);
     z-index: 1;
 }
@@ -346,8 +342,8 @@ body {
 /* Timeline title */
 .timeline-container h1 {
     font-size: 2.5rem;
-    font-family: 'Moulpali', serif;
-    color: #FFD700;
+    font-family: 'Preahvihear', serif;
+    color: #d9be71;
     margin-bottom: 30px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.35);
 }
@@ -384,7 +380,7 @@ body {
 
 /* Timeline time */
 .timeline-time {
-    background: #FFD700;
+    background: #d9be71;
     color: #fff;
     font-weight: bold;
     font-size: 1.2em;
@@ -418,7 +414,7 @@ body {
     margin: 0;
     font-size: 14px;
     font-weight: 500;
-    font-family: 'Moulpali';
+    font-family: 'Preahvihear';
     color: #333;
 }
 
@@ -426,7 +422,7 @@ body {
     margin: 10px 0 0;
     font-size: 12px;
     font-weight: 500;
-    font-family: 'Moulpali';
+    font-family: 'Preahvihear';
     color: #555;
     line-height: 1.6;
 }
@@ -439,7 +435,7 @@ body {
     left: 50%;
     width: 15px;
     height: 15px;
-    background: #FFD700;
+    background: #d9be71;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
@@ -508,9 +504,16 @@ body {
 .primary-title {
     font-size: 5vw;
     font-family: 'Dangrek', serif;
-    color: #FFD700;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 
-                 0 4px 8px rgba(0, 0, 0, 0.35);
+    color: #d9be71;
+   
+    margin: 30px 0;
+    text-align: center;
+}
+.primary-title2 {
+    font-size: 5vw;
+    font-family: 'Konkhmer Sleokchher', serif;
+    color: #d9be71;
+   
     margin: 30px 0;
     text-align: center;
 }
@@ -551,10 +554,10 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery-image:hover {
+/* .gallery-image:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
+} */
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
