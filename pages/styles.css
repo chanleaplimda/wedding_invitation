@@ -550,6 +550,9 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
+button {
+    display: none;
+}
 
 .gallery-image {
     width: 100%;
@@ -578,4 +581,43 @@ body {
     .gallery {
         grid-template-columns: 1fr;
     }
+}
+
+/* Hide all buttons except the audio button */
+button {
+    display: none;
+}
+/* Style the audio button */
+#playAudio {
+    position: fixed; /* Fixed position */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    z-index: 1000; /* Ensure it's above other elements */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid white; /* White circle border */
+    border-radius: 50%; /* Make it circular */
+    width: 50px; /* Button size */
+    height: 50px; /* Button size */
+    display: flex; /* Center the icon */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+/* Icon inside the button */
+#playAudio i {
+    font-size: 24px; /* Icon size */
+    color: white; /* Icon color */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+#playAudio:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+    border-color: #d9be71; /* Change border color on hover */
+}
+
+#playAudio:hover i {
+    color: #d9be71; /* Change icon color on hover */
 }
