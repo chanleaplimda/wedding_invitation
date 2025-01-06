@@ -14,12 +14,15 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 </head>
 <body>
-    <audio id="music">
+    <audio autoplay>
+        <source src="../assets/Until I Found You - Stephen Sanchez - Cover (Violin).mp3" type="audio/mp3" />
+    </audio>
+    <!-- <audio id="music">
         <source src="../assets/Until I Found You - Stephen Sanchez - Cover (Violin).mp3" type="audio/mpeg">
     </audio>
     <button id="playAudio" class="audio-button">
         <i class="fas fa-volume-up"></i> <!-- Default sound on icon -->
-    </button>
+    </button> -->
     <video autoplay muted loop playsinline id="background-video">
         <source src="../assets/background.mp4" type="video/mp4">
         Your browser does not support the video tag.
