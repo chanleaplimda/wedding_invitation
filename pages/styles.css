@@ -109,9 +109,9 @@ body {
 .name-title2, .name-title3 {
     /* margin: 0; */
     white-space: nowrap;
-    line-height: 7vw;
     font-family: 'Preahvihear', 'Khmer OS', 'Arial', sans-serif;;
     font-size: 4.0vw;
+    line-height: 7vw;
     color: #d9be71;
    
 }
