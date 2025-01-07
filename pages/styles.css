@@ -109,11 +109,13 @@ body {
 .name-title2, .name-title3 {
     margin: 0;
     white-space: nowrap;
+    height: 25px;
     font-family: 'Preahvihear', 'Khmer OS', 'Arial', sans-serif;;
     font-size: 4.0vw;
     color: #d9be71;
    
 }
+
 
 /* Event details card */
 .card {
