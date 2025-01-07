@@ -109,7 +109,7 @@ body {
 .name-title2, .name-title3 {
     margin: 0;
     white-space: nowrap;
-    font-family: 'Preahvihear';
+    font-family: 'Preahvihear', 'Khmer OS', 'Arial', sans-serif;;
     font-size: 4.0vw;
     color: #d9be71;
    
