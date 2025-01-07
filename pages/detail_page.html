@@ -17,8 +17,8 @@
     <button id="playAudio" class="audio-button">
         <i class="fas fa-volume-up"></i> <!-- Default sound on icon -->
     </button>
-    <audio autoplay>
-        <source src="../assets/Until I Found You - Stephen Sanchez - Cover (Violin).mp3" type="audio/mp3" />
+    <audio id="music" autoplay>
+        <source src="../assets/Until I Found You - Stephen Sanchez - Cover (Violin).mp3" type="audio/mpeg">
     </audio>
     </button> 
     <video autoplay muted loop playsinline id="background-video">
@@ -214,24 +214,35 @@
         </div>
     </div>
     <script>
-    var audio = document.getElementById("music");
+   var audio = document.getElementById("music");
 var playButton = document.getElementById("playAudio");
 
-playButton.addEventListener("click", function() {
-    if (audio.paused) {
-        audio.play();
-        playButton.querySelector("i").classList.replace("fa-play", "fa-pause");
-    } else {
-        audio.pause();
-        playButton.querySelector("i").classList.replace("fa-pause", "fa-play");
-    }
-});
-audio.addEventListener("playing", function() {
-    playButton.querySelector("i").classList.replace("fa-play", "fa-pause");
+// Attempt to auto-play the audio when the page loads
+window.addEventListener("load", function () {
+    audio.play().catch(() => {
+        // If autoplay fails (due to browser policies), show a message or handle it
+        console.log("Autoplay blocked. Please click the play button to start the audio.");
+    });
 });
 
-audio.addEventListener("pause", function() {
-    playButton.querySelector("i").classList.replace("fa-pause", "fa-play");
+// Toggle play/pause and update the icon
+playButton.addEventListener("click", function () {
+    if (audio.paused) {
+        audio.play();
+        playButton.querySelector("i").classList.replace("fa-volume-mute", "fa-volume-up"); // Sound on icon
+    } else {
+        audio.pause();
+        playButton.querySelector("i").classList.replace("fa-volume-up", "fa-volume-mute"); // Sound off icon
+    }
+});
+
+// Update icon when audio is playing or paused
+audio.addEventListener("playing", function () {
+    playButton.querySelector("i").classList.replace("fa-volume-mute", "fa-volume-up"); // Sound on icon
+});
+
+audio.addEventListener("pause", function () {
+    playButton.querySelector("i").classList.replace("fa-volume-up", "fa-volume-mute"); // Sound off icon
 });
     </script>
 </body>

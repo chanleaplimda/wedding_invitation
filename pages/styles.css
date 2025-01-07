@@ -592,7 +592,6 @@ button {
 #playAudio {
     display: inline-block; /* or use 'block' depending on your layout */
 }
-/* Style the audio button */
 #playAudio {
     position: fixed; /* Fixed position */
     top: 20px; /* Distance from the top */
@@ -610,14 +609,12 @@ button {
     transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
 }
 
-/* Icon inside the button */
 #playAudio i {
-    font-size: 24px; /* Icon size */
+    font-size: 14px; /* Icon size */
     color: white; /* Icon color */
     transition: color 0.3s ease; /* Smooth transition */
 }
 
-/* Hover effect */
 #playAudio:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
     border-color: #d9be71; /* Change border color on hover */
