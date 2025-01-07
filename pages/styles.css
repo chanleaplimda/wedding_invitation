@@ -103,18 +103,15 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    line-height: 50px;
     white-space: nowrap;
 }
 
 .name-title2, .name-title3 {
     /* margin: 0; */
     white-space: nowrap;
-    font-family: 'Preahvihear', 'Khmer OS', 'Arial', sans-serif;;
+    font-family: 'Preahvihear', 'Khmer OS', 'Arial', sans-serif;
     font-size: 4.0vw;
-    line-height: 50px;
     color: #d9be71;
-   
 }
 
 
