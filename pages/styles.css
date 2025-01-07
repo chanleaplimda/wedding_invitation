@@ -27,7 +27,7 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    filter: brightness(0.95);
+    filter: brightness(0.75);
 }
 
 /* Title styles */
@@ -587,6 +587,11 @@ button {
 button {
     display: none;
 }
+
+/* Override for the audio button */
+#playAudio {
+    display: inline-block; /* or use 'block' depending on your layout */
+}
 /* Style the audio button */
 #playAudio {
     position: fixed; /* Fixed position */
@@ -596,8 +601,8 @@ button {
     background-color: transparent; /* Transparent background */
     border: 2px solid white; /* White circle border */
     border-radius: 50%; /* Make it circular */
-    width: 50px; /* Button size */
-    height: 50px; /* Button size */
+    width: 30px; /* Button size */
+    height: 30px; /* Button size */
     display: flex; /* Center the icon */
     justify-content: center;
     align-items: center;
